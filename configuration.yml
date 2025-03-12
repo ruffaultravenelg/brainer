@@ -1,17 +1,17 @@
-role: asker 
-rabbitmq:
-  host: localhost # default: localhost
-  port: 5678 # default: 5672
-  credentials: # default: None
-    username: admin
-    password: adminpass
 mongodb:
-  host: localhost # default: localhost
-  port: 27017 # default: 27017
-  credentials: # default: None
-    username: admin
+  collection: questions
+  credentials:
+    authMechanism: SCRAM-SHA-256
+    authSource: admin
     password: adminpass
-    authSource: admin # default: admin
-    authMechanism: SCRAM-SHA-256 # default: SCRAM-SHA-256
-  database: brainers_db # default: brainers_db
-  collection: questions # default: questions
+    username: admin
+  database: brainers_db
+  host: localhost
+  port: 27017
+rabbitmq:
+  credentials:
+    password: adminpass
+    username: admin
+  host: 12.12.12.12
+  port: 5678
+role: asker
