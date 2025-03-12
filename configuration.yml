@@ -12,6 +12,6 @@ rabbitmq:
   credentials:
     password: adminpass
     username: admin
-  host: 12.12.12.12
+  host: 12.4.53.5
   port: 5678
-role: asker
+role: brainer
