@@ -23,7 +23,7 @@ python updateConf.py
 # Ajouter l'ouverture automatique au bashrc
 BASHRC="$HOME/.bashrc"
 LINES=(
-  "cd ~/Brainer"
+  "cd ~/brainer"
   "source venv/bin/activate"
   "clear"
   "python3 main.py -c configuration.yml"
